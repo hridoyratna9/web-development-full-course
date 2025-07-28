@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OverFlow</title>
+    <style>
+        .box{
+            width: 500px;
+            height: 150px;
+            border: 3px solid steelblue;
+            /* overflow: auto; */
+            /* overflow-x: hidden; */
+            overflow-y: auto;
+        }
+
+        /* #box-1{
+            overflow: hidden;
+            overflow: scroll;
+            overflow: auto;
+            overflow-x: hidden;
+        } */
+
+        .elipsis{
+            width: 200px;
+            border: 1px solid steelblue;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p title="I am a serious learner. I am investing at least 6-8 hours every single day. No gap at all." class="elipsis">I am a serious learner. I am investing at least 6-8 hours every single day. No gap at all.</p>
+    </header>
+    <section>
+        <!-- .box*2>h3{My Text Box $}+p>lorem50 -->
+        <div id="box-1" class="box">
+            <h3>My Text Box 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eligendi hic temporibus perspiciatis tempora, optio fuga non amet, ullam architecto, quos id esse. Reiciendis explicabo voluptatum excepturi ipsam. Optio veritatis soluta accusamus repellendus possimus sunt repudiandae. Saepe porro laudantium voluptatem praesentium amet, ducimus tempore corrupti repellat suscipit nam ratione neque?</p>
+        </div>
+        <div class="box">
+            <h3>My Text Box 2</h3>
+            <p>Laboriosam, dolores! Dicta, quisquam! Natus architecto sed qui temporibus nemo! Tempora possimus fugit, esse distinctio reprehenderit quo optio eveniet consectetur. Eos, non omnis quas eligendi molestiae aliquid aut nam et adipisci nemo suscipit? Hic deserunt porro voluptatum, quam mollitia, minima blanditiis voluptate maiores a aliquam inventore cumque tenetur excepturi veniam.</p>
+        </div>
+       
+        <div class="box">
+            <h3>Text Box 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea reprehenderit enim eaque distinctio, et voluptates praesentium eos. Nisi, adipisci molestias.</p>
+        </div>
+
+    </section>
+</body>
+</html>
